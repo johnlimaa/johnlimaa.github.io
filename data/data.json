@@ -1,23 +1,25 @@
 {
     "data": [
         {
-            "tipo": "cp",
+            "tipo": "cursoPresencial",
             "ano": 2015,
             "titulo": "Manutenção de notebooks (básico)",
             "instituicao": "SolucioTec",
             "descricao": "Troca de peças em notebooks, instalação de sistema operacional e ferramentas para diagnósticos de peças defeituosas.",
-            "duracao": "10/2015 -- 11/2015"
+            "duracao": "10/2015 -- 11/2015",
+            "link": "https://drive.google.com/file/d/1XaRA6F07N2n9YcVBG2afgJJqsUXpxApk/view?usp=sharing"
         },
         {
-            "tipo": "cp",
+            "tipo": "cursoPresencial",
             "ano": 2014,
             "titulo": "Game Developer",
             "instituicao": "Pix Studios",
             "descricao": "Criação de jogos utilizando a engine Unity com a linguagem JavaScript.",
-            "duracao": "12/2012 -- 12/2014"
+            "duracao": "12/2012 -- 12/2014",
+            "link": "https://drive.google.com/file/d/1qLu78gwrSUlZTWTTvm_HWoWaNyzSKBQN/view?usp=sharing"
         },
         {
-            "tipo": "co",
+            "tipo": "cursoOnline",
             "ano": 2015,
             "titulo": "Windows Server Administration Fundamentals",
             "instituicao": "Microsoft Virtual Academy",
@@ -25,7 +27,7 @@
             "duracao": "07/2015 - 09/2015"
         },
         {
-            "tipo": "co",
+            "tipo": "cursoOnline",
             "ano": 2015,
             "titulo": "Fundamentos de segurança",
             "instituicao": "Microsoft Virtual Academy",
@@ -33,7 +35,7 @@
             "duracao": "04/2015 -- 05/2015"
         },
         {
-            "tipo": "co",
+            "tipo": "cursoOnline",
             "ano": 2015,
             "titulo": "Fundamentos em sistemas de rede",
             "instituicao": "Microsoft Virtual Academy",
@@ -41,7 +43,7 @@
             "duracao": "03/2015 -- 04/2014"
         },
         {
-            "tipo": "co",
+            "tipo": "cursoOnline",
             "ano": 2014,
             "titulo": "Linguagem PHP",
             "instituicao": "Code Academy",
@@ -49,7 +51,7 @@
             "duracao": "Indefinida"
         },
         {
-            "tipo": "co",
+            "tipo": "cursoOnline",
             "ano": 2014,
             "titulo": "Linguagem HTML & CSS",
             "instituicao": "Code Academy",
@@ -57,49 +59,49 @@
             "duracao": "Indefinida"
         },
         {
-            "tipo": "tr",
+            "tipo": "treinamento",
             "ano": 2015,
             "icon": "directions_walk",
             "titulo": "NR-35 | Trabalho em altura",
             "instituicao": "Consórcio Construtor TransOlímpica"
         },
         {
-            "tipo": "tr",
+            "tipo": "treinamento",
             "ano": 2015,
             "icon": "whatshot",
             "titulo": "NR-23 | Brigadista",
             "instituicao": "SeaFire"
         },
         {
-            "tipo": "tr",
+            "tipo": "treinamento",
             "ano": 2015,
             "icon": "event_seat",
             "titulo": "Z-45/25 RT | Operador de plataforma",
             "instituicao": "Orguel"
         },
         {
-            "tipo": "xp",
+            "tipo": "experienciaProfissional",
             "titulo": "Estagiário em análise de sistemas",
             "instituicao": "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
             "descricao": "Tarefas na aplicação IBM Lotus Notes e Domino Administrator, criação de resgistros DNS, utilização de PowerShell para automatização de tarefas em Windows Server, uso da aplicação Rundeck para ativar os scripts criados em PowerShell e tratamento de incidentes em BMC Remedy.",
             "duracao": "08/2017 -- Atualmente"
         },
         {
-            "tipo": "xp",
+            "tipo": "experienciaProfissional",
             "titulo": "Auxiliar administrativo em TI",
             "instituicao": "Consórcio Construtor TransOlímpica",
             "descricao": "Instalação de câmeras, criação de e-mails, criação de usuários em Windows Server, backup de informações, instalação do Windows e solução de problemas.",
             "duracao": "07/2015 -- 10/2016"
         },
         {
-            "tipo": "xp",
+            "tipo": "experienciaProfissional",
             "titulo": "Jovem aprendiz em TI",
             "instituicao": "Consórcio Construtor TransOlímpica",
             "descricao": "Instalação de impressoras, montagem de computadores, backup de arquivos e suporte ao usuário local.",
             "duracao": "07/2014 -- 06/2015"
         },
         {
-            "tipo": "xp",
+            "tipo": "experienciaProfissional",
             "titulo": "Técnico de campo e helpdesk",
             "instituicao": "Broadcast Serviços de Manutenção de Computadores",
             "descricao": "Atendimento remoto por programas de acesso, visita aos clientes para solução de problemas locais, montagem e manutenção de computadores e notebooks.",
