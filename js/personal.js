@@ -38,7 +38,7 @@
             card;
 
         for (var c = 0; c < dados.length; c++) {
-            column = $("<div/>").addClass("col s12 m12 l6");
+            column = $("<div/>").addClass("col s12 m12 l12");
             card = $("<div/>").addClass("card-panel z-depth-2");
             
             $("<span/>").text(dados[c].ano).appendTo(card);
