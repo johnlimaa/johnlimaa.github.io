@@ -1,12 +1,5 @@
 (function () {
 
-<<<<<<< HEAD
-// Carrega a sidebar em dispositivos móveis
-document.addEventListener("DOMContentLoaded", function() {
-    var elems = document.querySelectorAll(".sidenav");
-    var instances = M.Sidenav.init(elems, {edge: "right"});
-});
-=======
     M.AutoInit();
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -59,4 +52,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 })();
->>>>>>> continuandoEstruturacao
