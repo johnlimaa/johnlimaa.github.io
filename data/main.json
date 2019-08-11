@@ -1,114 +1,62 @@
 {
-	data: [
+	"data": [
 		{
-			tipo: "cursoPresencial",
-			ano: 2015,
-			titulo: "Manutenção de notebooks (básico)",
-			instituicao: "SolucioTec",
-			descricao: "Troca de peças em notebooks, instalação de sistema operacional e ferramentas para diagnósticos de peças defeituosas.",
-			duracao: "10/2015 -- 11/2015",
-			link: "https://drive.google.com/file/d/1XaRA6F07N2n9YcVBG2afgJJqsUXpxApk/view?usp=sharing"
+			"tipo": "cursoPresencial",
+			"ano": 2015,
+			"titulo": "Manutenção de notebooks (básico)",
+			"instituicao": "SolucioTec",
+			"descricao": "Troca de peças em notebooks, instalação de sistema operacional e ferramentas para diagnósticos de peças defeituosas.",
+			"duracao": "10/2015 -- 11/2015",
+			"link": "https://drive.google.com/file/d/1XaRA6F07N2n9YcVBG2afgJJqsUXpxApk/view?usp=sharing"
+		},		
+		{
+			"tipo": "treinamento",
+			"ano": 2015,
+			"icon": "directions_walk",
+			"titulo": "NR-35 | Trabalho em altura",
+			"instituicao": "Consórcio Construtor TransOlímpica"
 		},
 		{
-			tipo: "cursoPresencial",
-			ano: 2014,
-			titulo: "Game Developer",
-			instituicao: "Pix Studios",
-			descricao: "Criação de jogos utilizando a engine Unity com a linguagem JavaScript.",
-			duracao: "12/2012 -- 12/2014",
-			link: "https://drive.google.com/file/d/1qLu78gwrSUlZTWTTvm_HWoWaNyzSKBQN/view?usp=sharing"
+			"tipo": "treinamento",
+			"ano": 2015,
+			"icon": "whatshot",
+			"titulo": "NR-23 | Brigadista",
+			"instituicao": "SeaFire"
 		},
 		{
-			tipo: "cursoOnline",
-			ano: 2015,
-			titulo: "Windows Server Administration Fundamentals",
-			instituicao: "Microsoft Virtual Academy",
-			descricao: "Família Windows Server, requisitos de instalação, visão dos serviços e monitoramento e solução de problemas.",
-			duracao: "07/2015 - 09/2015",
-			link: "https://drive.google.com/file/d/1Ajjb2YzGAQai-4fC-bZ7INDzpDtHMwDN/view?usp=sharing"
+			"tipo": "treinamento",
+			"ano": 2015,
+			"icon": "event_seat",
+			"titulo": "Z-45/25 RT | Operador de plataforma",
+			"instituicao": "Orguel"
 		},
 		{
-			tipo: "cursoOnline",
-			ano: 2015,
-			titulo: "Fundamentos de segurança",
-			instituicao: "Microsoft Virtual Academy",
-			descricao: "Protocolos de segurança e métodos de autenticação.",
-			duracao: "04/2015 -- 05/2015",
-			link: "https://drive.google.com/file/d/1VGB5j1GmjNUTL-c44weCQ_YYNTuRXETI/view?usp=sharing"
+			"tipo": "experienciaProfissional",
+			"titulo": "Estagiário em análise de sistemas",
+			"instituicao": "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
+			"descricao": "Tarefas na aplicação IBM Lotus Notes e Domino Administrator, criação de resgistros DNS, utilização de PowerShell para automatização de tarefas em Windows Server, uso da aplicação Rundeck para ativar os scripts criados em PowerShell e tratamento de incidentes em BMC Remedy.",
+			"duracao": "08/2017 -- Atualmente"
 		},
 		{
-			tipo: "cursoOnline",
-			ano: 2015,
-			titulo: "Fundamentos em sistemas de rede",
-			instituicao: "Microsoft Virtual Academy",
-			descricao: "Configuração de rede cabeadas e sem fio, protocolo IP e serviços de rede.",
-			duracao: "03/2015 -- 04/2014",
-			link: "https://drive.google.com/file/d/1c_B5P9UJkDd_oIXxU4nEKpGkV-o60bVM/view?usp=sharing"
+			"tipo": "experienciaProfissional",
+			"titulo": "Auxiliar administrativo em TI",
+			"instituicao": "Consórcio Construtor TransOlímpica",
+			"descricao": "Instalação de câmeras, criação de e-mails, criação de usuários em Windows Server, backup de informações, instalação do Windows e solução de problemas.",
+			"duracao": "07/2015 -- 10/2016"
 		},
 		{
-			tipo: "cursoOnline",
-			ano: 2014,
-			titulo: "Linguagem PHP",
-			instituicao: "Code Academy",
-			descricao: "Ganhar familiaridade com a linguagem PHP e aprender seus fundamentos, conceitos, tipos de dados, funções e por tudo em prática.",
-			duracao: "Indefinida"
+			"tipo": "experienciaProfissional",
+			"titulo": "Jovem aprendiz em TI",
+			"instituicao": "Consórcio Construtor TransOlímpica",
+			"descricao": "Instalação de impressoras, montagem de computadores, backup de arquivos e suporte ao usuário local.",
+			"duracao": "07/2014 -- 06/2015"
 		},
 		{
-			tipo: "cursoOnline",
-			ano: 2014,
-			titulo: "Linguagem HTML & CSS",
-			instituicao: "Code Academy",
-			descricao: "Aprofundar os conhecimentos nas linguagens de marcação mais utilizadas no mercado.",
-			duracao: "Indefinida"
-		},
-		{
-			tipo: "treinamento",
-			ano: 2015,
-			icon: "directions_walk",
-			titulo: "NR-35 | Trabalho em altura",
-			instituicao: "Consórcio Construtor TransOlímpica"
-		},
-		{
-			tipo: "treinamento",
-			ano: 2015,
-			icon: "whatshot",
-			titulo: "NR-23 | Brigadista",
-			instituicao: "SeaFire"
-		},
-		{
-			tipo: "treinamento",
-			ano: 2015,
-			icon: "event_seat",
-			titulo: "Z-45/25 RT | Operador de plataforma",
-			instituicao: "Orguel"
-		},
-		{
-			tipo: "experienciaProfissional",
-			titulo: "Estagiário em análise de sistemas",
-			instituicao: "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
-			descricao: "Tarefas na aplicação IBM Lotus Notes e Domino Administrator, criação de resgistros DNS, utilização de PowerShell para automatização de tarefas em Windows Server, uso da aplicação Rundeck para ativar os scripts criados em PowerShell e tratamento de incidentes em BMC Remedy.",
-			duracao: "08/2017 -- Atualmente"
-		},
-		{
-			tipo: "experienciaProfissional",
-			titulo: "Auxiliar administrativo em TI",
-			instituicao: "Consórcio Construtor TransOlímpica",
-			descricao: "Instalação de câmeras, criação de e-mails, criação de usuários em Windows Server, backup de informações, instalação do Windows e solução de problemas.",
-			duracao: "07/2015 -- 10/2016"
-		},
-		{
-			tipo: "experienciaProfissional",
-			titulo: "Jovem aprendiz em TI",
-			instituicao: "Consórcio Construtor TransOlímpica",
-			descricao: "Instalação de impressoras, montagem de computadores, backup de arquivos e suporte ao usuário local.",
-			duracao: "07/2014 -- 06/2015"
-		},
-		{
-			tipo: "experienciaProfissional",
-			titulo: "Técnico de campo e helpdesk",
-			instituicao: "Broadcast Serviços de Manutenção de Computadores",
-			descricao: "Atendimento remoto por programas de acesso, visita aos clientes para solução de problemas locais, montagem e manutenção de computadores e notebooks.",
-			duracao: "01/2013 -- 03/2014"
+			"tipo": "experienciaProfissional",
+			"titulo": "Técnico de campo e helpdesk",
+			"instituicao": "Broadcast Serviços de Manutenção de Computadores",
+			"descricao": "Atendimento remoto por programas de acesso, visita aos clientes para solução de problemas locais, montagem e manutenção de computadores e notebooks.",
+			"duracao": "01/2013 -- 03/2014"
 		}
 	]
 }
