@@ -31,32 +31,32 @@
 			"instituicao": "Orguel"
 		},
 		{
-			"tipo": "experienciaProfissional",
+			"tipo": "exp",
 			"titulo": "Estagiário em análise de sistemas",
 			"instituicao": "BNDES - Banco Nacional de Desenvolvimento Econômico e Social",
 			"descricao": "Tarefas na aplicação IBM Lotus Notes e Domino Administrator, criação de resgistros DNS, utilização de PowerShell para automatização de tarefas em Windows Server, uso da aplicação Rundeck para ativar os scripts criados em PowerShell e tratamento de incidentes em BMC Remedy.",
-			"duracao": "08/2017 -- Atualmente"
+			"duracao": "Atualmente desde 08/2017"
 		},
 		{
-			"tipo": "experienciaProfissional",
+			"tipo": "exp",
 			"titulo": "Auxiliar administrativo em TI",
 			"instituicao": "Consórcio Construtor TransOlímpica",
 			"descricao": "Instalação de câmeras, criação de e-mails, criação de usuários em Windows Server, backup de informações, instalação do Windows e solução de problemas.",
-			"duracao": "07/2015 -- 10/2016"
+			"duracao": "10/2016 desde 07/2015"
 		},
 		{
-			"tipo": "experienciaProfissional",
+			"tipo": "exp",
 			"titulo": "Jovem aprendiz em TI",
 			"instituicao": "Consórcio Construtor TransOlímpica",
 			"descricao": "Instalação de impressoras, montagem de computadores, backup de arquivos e suporte ao usuário local.",
-			"duracao": "07/2014 -- 06/2015"
+			"duracao": "06/2015 desde 07/2014"
 		},
 		{
-			"tipo": "experienciaProfissional",
+			"tipo": "exp",
 			"titulo": "Técnico de campo e helpdesk",
 			"instituicao": "Broadcast Serviços de Manutenção de Computadores",
 			"descricao": "Atendimento remoto por programas de acesso, visita aos clientes para solução de problemas locais, montagem e manutenção de computadores e notebooks.",
-			"duracao": "01/2013 -- 03/2014"
+			"duracao": "03/2014 desde 01/2013"
 		}
 	]
 }
