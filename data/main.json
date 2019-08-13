@@ -15,21 +15,21 @@
 			"link": "https://drive.google.com/file/d/1qLu78gwrSUlZTWTTvm_HWoWaNyzSKBQN/view?usp=sharing"
 		},		
 		{
-			"tipo": "treinamento",
+			"tipo": "training",
 			"ano": 2015,
 			"icon": "directions_walk",
 			"titulo": "NR-35 | Trabalho em altura",
 			"instituicao": "Consórcio Construtor TransOlímpica"
 		},
 		{
-			"tipo": "treinamento",
+			"tipo": "training",
 			"ano": 2015,
 			"icon": "whatshot",
 			"titulo": "NR-23 | Brigadista",
 			"instituicao": "SeaFire"
 		},
 		{
-			"tipo": "treinamento",
+			"tipo": "training",
 			"ano": 2015,
 			"icon": "event_seat",
 			"titulo": "Z-45/25 RT | Operador de plataforma",
@@ -62,6 +62,11 @@
 			"instituicao": "Broadcast Serviços de Manutenção de Computadores",
 			"descricao": "Atendimento remoto por programas de acesso, visita aos clientes para solução de problemas locais, montagem e manutenção de computadores e notebooks.",
 			"duracao": "03/2014 desde 01/2013"
+		},
+		{
+			"tipo": "skill",
+			"nivel": "Iniciante",
+			"titulo": "Node.js"
 		}
 	]
 }

@@ -19,7 +19,7 @@
         };
     });
 
-    // Cria e carrega os dados referentes as experiencias de trabalho
+    // Cria e carrega os dados referentes as experiencias de trabalho e cursos
     function createCardsView(selector, data) {
         var card = $("<div/>").addClass("card mb-3"),
             body = $("<div/>").addClass("card-body"),
