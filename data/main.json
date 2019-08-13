@@ -1,13 +1,18 @@
 {
 	"data": [
 		{
-			"tipo": "cursoPresencial",
-			"ano": 2015,
+			"tipo": "course",			
 			"titulo": "Manutenção de notebooks (básico)",
 			"instituicao": "SolucioTec",
-			"descricao": "Troca de peças em notebooks, instalação de sistema operacional e ferramentas para diagnósticos de peças defeituosas.",
-			"duracao": "10/2015 -- 11/2015",
+			"descricao": "Troca de peças em notebooks, instalação de sistema operacional e ferramentas para diagnósticos de peças defeituosas.",			
 			"link": "https://drive.google.com/file/d/1XaRA6F07N2n9YcVBG2afgJJqsUXpxApk/view?usp=sharing"
+		},
+		{
+			"tipo": "course",			
+			"titulo": "Game Developer",
+			"instituicao": "Pix Studios",
+			"descricao": "Criação de jogos utilizando a engine Unity com a linguagem JavaScript.",			
+			"link": "https://drive.google.com/file/d/1qLu78gwrSUlZTWTTvm_HWoWaNyzSKBQN/view?usp=sharing"
 		},		
 		{
 			"tipo": "treinamento",
