@@ -15,3 +15,9 @@ body {
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* Nivel de habilidade */
+.basico { width: 25%; }
+.intermediario { width: 50%; }
+.avancado { width: 75%; }
+.profissional { width: 100% }

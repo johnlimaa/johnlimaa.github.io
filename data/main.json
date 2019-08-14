@@ -15,23 +15,20 @@
 			"link": "https://drive.google.com/file/d/1qLu78gwrSUlZTWTTvm_HWoWaNyzSKBQN/view?usp=sharing"
 		},		
 		{
-			"tipo": "training",
-			"ano": 2015,
-			"icon": "directions_walk",
+			"tipo": "training",			
+			"icone": "fa-running",
 			"titulo": "NR-35 | Trabalho em altura",
 			"instituicao": "Consórcio Construtor TransOlímpica"
 		},
 		{
-			"tipo": "training",
-			"ano": 2015,
-			"icon": "whatshot",
+			"tipo": "training",			
+			"icone": "fa-fire-extinguisher",
 			"titulo": "NR-23 | Brigadista",
 			"instituicao": "SeaFire"
 		},
 		{
-			"tipo": "training",
-			"ano": 2015,
-			"icon": "event_seat",
+			"tipo": "training",			
+			"icone": "fa-hard-hat",
 			"titulo": "Z-45/25 RT | Operador de plataforma",
 			"instituicao": "Orguel"
 		},
@@ -65,8 +62,34 @@
 		},
 		{
 			"tipo": "skill",
-			"nivel": "Iniciante",
+			"nivel": "Básico",
 			"titulo": "Node.js"
+		},
+		{
+			"tipo": "skill",
+			"nivel": "Básico",
+			"titulo": "React"
+		},
+		{
+			"tipo": "skill",
+			"nivel": "Básico",
+			"titulo": "Linux"
+		},
+		{
+			"tipo": "skill",
+			"nivel": "Intermediário",
+			"titulo": "HTML 5, CSS e JavaScript"
+		},
+		{
+			"tipo": "skill",
+			"nivel": "Avançado",
+			"titulo": "Windows Desktop"
+		},
+		{
+			"tipo": "skill",
+			"nivel": "Avançado",
+			"titulo": "Windows Server"
 		}
+
 	]
 }
