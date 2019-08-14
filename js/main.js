@@ -31,7 +31,7 @@
             footer,
             title;
 
-        if (data.tipo == "training") {
+        if (data.tipo == "training") {            
             title = $("<h5/>").addClass("card-title");
             title.append($("<span/>").addClass("badge").append($("<i/>").addClass("fas " + data.icone)));
             title.append(data.titulo);            
@@ -60,6 +60,7 @@
         card.appendTo(selector);
     };
 
+    // Cria as views de skill
     function createSkillsView(selector, data) {
         function defineSkillLevel(level) {            
             switch(level) {
@@ -79,7 +80,7 @@
             return level;
         };
         
-        var skill = $("<div/>").addClass("mt-3");
+        let skill = $("<div/>").addClass("mt-3 skill");
 
         skill.append($("<h6/>").text(data.titulo));
         skill.append($("<div/>").addClass("progress").append($("<div/>").attr({ role: "progressbar" }).addClass("progress-bar " + defineSkillLevel(data.nivel)).text(data.nivel)));
@@ -87,4 +88,46 @@
         skill.appendTo(selector);
     };
 
+    // Ordena as skills
+    $("#skills").delegate("a", "click", function(evt) {
+        function removeDOMs(arr) {
+            for (var i in arr) {
+                $(arr[i]).remove();
+            };
+        };       
+
+        function appendToDOM(arr, selector) {
+            for (let i in arr) {
+                $(arr[i]).appendTo(selector);
+            };
+        };
+
+        function orderElem(sequel, data) {
+            var order = [];
+            for (let s in sequel) {
+                for (let d in data) {
+                    if ($(data[d]).find("." + sequel[s]).length === 1) order.push(data[d]);
+                };
+            };
+
+            return order;
+        };
+
+        evt.preventDefault();        
+        var ordem = evt.target.hash.replace("#", ""),
+            skills = $.find(".skill"),
+            posicao;
+
+        if (ordem === "crescente") {
+            posicao = orderElem(["basico", "intermediario", "avancado", "profissional"], skills);
+            removeDOMs(skills);
+            appendToDOM(posicao, "#skills");
+        } else if (ordem === "decrescente") {
+            posicao = orderElem(["profissional", "avancado", "intermediario", "basico"], skills);
+            removeDOMs(skills);
+            appendToDOM(posicao, "#skills");
+        } else if (ordem === "aleatorio") {
+            console.log("2");
+        };
+    });
 })();
