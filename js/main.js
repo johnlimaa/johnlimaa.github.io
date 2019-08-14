@@ -61,7 +61,29 @@
     };
 
     function createSkillsView(selector, data) {
-        console.log(data);
+        function defineSkillLevel(level) {            
+            switch(level) {
+                case ("Profissional") :
+                    level = "professional";
+                    break;
+                case ("Avançado") :
+                    level = "avancado";
+                    break;
+                case ("Intermediário") :
+                    level = "intermediario";
+                    break;
+                default:
+                    level = "basico";
+            };
+
+            return level;
+        };
+        let skill = $("<div/>").addClass("mt-3");
+
+        skill.append($("<h6/>").text(data.titulo));
+        skill.append($("<div/>").addClass("progress").append($("<div/>").attr({ role: "progressbar" }).addClass("progress-bar " + defineSkillLevel(data.nivel)).text(data.nivel)));
+
+        skill.appendTo(selector);
     };
 
 })();
