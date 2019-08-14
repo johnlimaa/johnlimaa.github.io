@@ -82,6 +82,11 @@
 		},
 		{
 			"tipo": "skill",
+			"nivel": "Intermediário",
+			"titulo": "Git"
+		},
+		{
+			"tipo": "skill",
 			"nivel": "Avançado",
 			"titulo": "Windows Desktop"
 		},
