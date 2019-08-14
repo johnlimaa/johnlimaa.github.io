@@ -78,7 +78,8 @@
 
             return level;
         };
-        let skill = $("<div/>").addClass("mt-3");
+        
+        var skill = $("<div/>").addClass("mt-3");
 
         skill.append($("<h6/>").text(data.titulo));
         skill.append($("<div/>").addClass("progress").append($("<div/>").attr({ role: "progressbar" }).addClass("progress-bar " + defineSkillLevel(data.nivel)).text(data.nivel)));
