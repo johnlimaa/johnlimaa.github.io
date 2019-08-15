@@ -127,7 +127,12 @@
             removeDOMs(skills);
             appendToDOM(posicao, "#skills");
         } else if (ordem === "aleatorio") {
-            console.log("2");
+            removeDOMs(skills);
+            posicao = [];
+            do {                
+                posicao.push(Math.floor(Math.random() * 2) ? skills.shift() : skills.pop());
+            } while (skills.length != 0);            
+            appendToDOM(posicao, "#skills");
         };
     });
 })();
