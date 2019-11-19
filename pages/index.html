@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Gerando casais</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>APS - Estatísticas</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-outline-primary" id="casalHet">Casais Heteros</button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-outline-primary" id="casalHom">Casais Homossexuais</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="couples"><p>asd</p></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let couplesQuantity = 30;
+        let homosexualCouple = true;
+
+        function generateAge(age) {
+            let lowerAge = 18, higherAge = 85;
+
+            if (typeof age === 'number') {
+                lowerAge = age - 10 < 18 ? lowerAge : age - 10;
+                higherAge = age + 10 > 90 ? higherAge : age + 10;
+
+                return Math.floor(Math.random() * (higherAge - lowerAge)) + lowerAge;
+            } else if (typeof age === 'undefined') {
+                return Math.floor(Math.random() * (higherAge - 18)) + 18;
+            };
+        };
+
+        function generateNames(firstName, lastName) {
+            let name = [], quantityOfLastNames = Math.floor(Math.random() * 3) + 1;
+
+            name.push(firstName[Math.floor(Math.random() * firstName.length)]);
+
+            for (let i = 0; i < quantityOfLastNames; i++) {
+                name.push(lastName[Math.floor(Math.random() * lastName.length)]);
+            };
+
+            return name.join(' ');
+        };
+
+        function generateCouples(couples, homosexual) {
+            let maleNames = ["Bernardo", "Matheus", "Davi", "Heitor", "Henrique", "Bruno", "Samuel", "Felipe", "Lorenzo", "Benjamim", "Vinícius", "Eduardo", "Noah", "Antônio", "Diego", "Leonardo", "Nicolas", "Daniel", "Thiago", "José", "Alexandre", "Gael", "André", "Vitor", "Mateus", "Carlos", "Caleb", "Paulo", "Theo", "Caio", "Joaquim", "Marcos", "Bryan", "Pietro", "Tiago", "Victor", "Francisco", "Yuri", "Fernando", "Ruan"],
+                femaleNames = ["Helena", "Isabela", "Lara", "Camila", "Letícia", "Valentina", "Luana", "Amanda", "Yasmin", "Sophia", "Juliana", "Bruna", "Cecília", "Fernanda", "Isadora", "Lorena", "Lívia", "Manuela", "Vitória", "Sara", "Aline", "Luiza", "Luna", "Gabriela", "Giovanna", "Jéssica", "Bianca", "Melissa", "Carolina", "Ester", "Regina", "Vanessa", "Heloísa", "Rafaela", "Nicole", "Milena", "Isabella", "Laís", "Ana Clara", "Eloá"],
+                lastNames = ["Abravanel", "Albuquerque", "Alencar", "Almada", "Álvares", "Alves", "Amoreira", "Andrade", "Annenberg", "Antena", "Barroso", "Bastos", "Beltrão", "Bentes", "Bernardes", "Bernardi", "Bial", "Bittencourt", "Bittencourt", "Boaventura", "Bonfim", "Carreira", "Carvalheira", "Carvalho", "Coutinho", "Crespo", "D’Ávila", "da Costa", "da Cruz", "da Cunha", "da Fonseca", "da Fontoura", "da Fronteira", "da Gama", "da Luz", "da Madureira", "da Maia", "da Rosa", "da Silva", "da Silveira", "da Veiga", "Dantas", "Dantas", "das Neves", "de Assunção", "de Borba", "de Lara", "de Lins", "de Oliveira", "de Quadros", "de Sá", "Dias", "Diegues", "do Prado", "Henriques", "Hermingues", "Hernandes", "Laranjeira", "Louzada", "Macieira", "Madeira", "Maldonado", "Mangueira", "Marcondes", "Marinho", "Marins", "Ribeira", "Rodrigues", "Sales", "Soares", "Soeira", "Solimões", "Steves", "Tavares", "Teixeira", "Teles", "Torres", "Trindade", "Vargas", "Vasconcelos", "Vasques"];
+
+            let couplesList = [], firstAge, secondAge;
+
+            for (let i = 0; i < couples; i++) {
+                firstAge = generateAge();
+                secondAge = generateAge(firstAge);
+
+                if (homosexual) {
+                    if (i % 2 === 0) {
+                        couplesList.push({
+                            firstPerson: generateNames(maleNames, lastNames),
+                            secondPerson: generateNames(maleNames, lastNames),
+                            ageFirstPerson: firstAge,
+                            ageSecondPerson: secondAge
+                        });
+                    } else {
+                        couplesList.push({
+                            firstPerson: generateNames(femaleNames, lastNames),
+                            secondPerson: generateNames(femaleNames, lastNames),
+                            ageFirstPerson: firstAge,
+                            ageSecondPerson: secondAge
+                        });
+                    };
+                } else {
+                    couplesList.push({
+                        firstPerson: generateNames(maleNames, lastNames),
+                        secondPerson: generateNames(femaleNames, lastNames),
+                        ageFirstPerson: firstAge,
+                        ageSecondPerson: secondAge
+                    });
+                };
+            };
+
+            return couplesList;
+        };
+
+        console.log(generateCouples(couplesQuantity, homosexualCouple));
+        $("#casalHet").click(function() {
+            $("#couples").empty();
+            // $("#couples").append(" <table ")
+        });
+
+        $("#casalHom").click(function() {
+            $("#couples").empty();
+        });
+
+    </script>
+
+</body>
+
+</html>
