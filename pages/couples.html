@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -15,25 +13,26 @@
 <body>
     <div class="container">
         <div class="row">
-            <h1>APS - Estatísticas</h1>
+            <h1 class="mx-auto">APS - Estatísticas</h1>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <button type="button" class="btn btn-outline-primary" id="casalHet">Casais Heteros</button>
-        </div>
-        <div class="row">
-            <button type="button" class="btn btn-outline-primary" id="casalHom">Casais Homossexuais</button>
+            <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-primary" id="casalHet">Casais Heteros</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-primary" id="casalHom">Casais Homossexuais</button>
+            </div>
+
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div id="couples"><p>asd</p></div>
+        <div class="row d-flex justify-content-center mt-3">
+            <div id="couples" class="w-100"></div>
         </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -47,6 +46,7 @@
     <script>
         let couplesQuantity = 30;
         let homosexualCouple = true;
+        let couples;
 
         function generateAge(age) {
             let lowerAge = 18, higherAge = 85;
@@ -85,7 +85,7 @@
                 secondAge = generateAge(firstAge);
 
                 if (homosexual) {
-                    if (i % 2 === 0) {
+                    if (i < 15) {
                         couplesList.push({
                             firstPerson: generateNames(maleNames, lastNames),
                             secondPerson: generateNames(maleNames, lastNames),
@@ -113,14 +113,29 @@
             return couplesList;
         };
 
-        console.log(generateCouples(couplesQuantity, homosexualCouple));
-        $("#casalHet").click(function() {
+
+        $("#casalHet").click(function () {
             $("#couples").empty();
-            // $("#couples").append(" <table ")
+            $("#couples").append(" <table class='table table-sm table-hover'> <thead> <th>Conjunge 1</th> <th>Idade</th> <th>Conjuge 2</th> <th>Idade</th> </thead> <tbody class='tableBody'> </tbody> </table>");
+
+            homosexualCouple = false;
+            couples = generateCouples(couplesQuantity, homosexualCouple);
+
+            for (i = 0; i < couples.length; i++) {
+                $(".tableBody").append("<tr> <td>" + couples[i].firstPerson + "</td><td>" + couples[i].ageFirstPerson + "</td><td>" + couples[i].secondPerson + "</td><td>" + couples[i].ageSecondPerson + "</td> </tr>");
+            };
         });
 
-        $("#casalHom").click(function() {
+        $("#casalHom").click(function () {
             $("#couples").empty();
+            $("#couples").append(" <table class='table table-sm table-hover'> <thead> <th>Conjunge 1</th> <th>Idade</th> <th>Conjuge 2</th> <th>Idade</th> </thead> <tbody class='tableBody'> </tbody> </table>");
+
+            homosexualCouple = true;
+            couples = generateCouples(couplesQuantity, homosexualCouple);
+
+            for (i = 0; i < couples.length; i++) {
+                $(".tableBody").append("<tr> <td>" + couples[i].firstPerson + "</td><td>" + couples[i].ageFirstPerson + "</td><td>" + couples[i].secondPerson + "</td><td>" + couples[i].ageSecondPerson + "</td> </tr>");
+            };
         });
 
     </script>
